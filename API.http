@@ -1,0 +1,24 @@
+### Send POST request-1
+POST http://127.0.0.1:8080/books
+Content-Type: application/json
+
+{
+  "query": "{book(id: \"1001\"){title} allBooks{isn title author publisher publishedDate}}"
+}
+### Send POST request-2
+POST http://127.0.0.1:8080/books
+Content-Type: application/json
+
+{
+  "query": "{book(id: \"1001\"){title}}"
+}
+
+### Send POST request-3
+POST http://127.0.0.1:8080/books
+Content-Type: application/json
+
+{
+  "query": "{allBooks{isn title author publisher publishedDate}}"
+}
+
+###
